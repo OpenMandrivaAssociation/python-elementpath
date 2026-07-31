@@ -2,7 +2,7 @@
 %bcond tests 1
 
 Name:		python-elementpath
-Version:	5.1.1
+Version:	5.1.3
 Release:	1
 Summary:	XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml
 Group:		Development/Python
