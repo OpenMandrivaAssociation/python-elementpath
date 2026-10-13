@@ -2,7 +2,7 @@
 %bcond tests 1
 
 Name:		python-elementpath
-Version:	5.1.3
+Version:	5.1.4
 Release:	1
 Summary:	XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml
 Group:		Development/Python
@@ -12,7 +12,7 @@ Source0:	%{URL}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildSystem:	python
 BuildArch:	noarch
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
@@ -46,5 +46,5 @@ pytest
 %files
 %doc README.rst
 %license LICENSE
-%{python3_sitelib}/%{module}
-%{python3_sitelib}/%{module}-%{version}.dist-info
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
